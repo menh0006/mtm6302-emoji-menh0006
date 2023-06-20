@@ -1,0 +1,33 @@
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* grid display with two columns for mobile version */
+#emoji{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    text-align: center;
+}
+
+/* styling the boxes for the emojis and content */
+.emojis {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* Increasing size of emojis */
+.emoji {
+    font-size: 2rem;
+}
+
+/* ------ Adding Media Queries ----- */
+
+/* grid display with three columns this time for desktop */
+
+@media screen and (min-width: 600px) {
+    #emoji {
+        grid-template-columns: 30% 30% 30%;
+    }
+}
