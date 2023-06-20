@@ -4,10 +4,11 @@
 }
 
 /* grid display with two columns for mobile version */
-#emoji{
+.section{
     display: grid;
-    grid-template-columns: 20% 20%;
+    grid-template-columns: 30% 30%;
     text-align: center;
+    justify-content: center;
 }
 
 /* styling the boxes for the emojis and content */
@@ -22,12 +23,16 @@
     font-size: 2rem;
 }
 
+.code {
+    background-color: grey;
+}
+
 /* ------ Adding Media Queries ----- */
 
-/* grid display with three columns this time for desktop */
+/* grid display with four columns this time for desktop */
 
 @media screen and (min-width: 600px) {
     #emoji {
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 15% 15% 15% 15%;
     }
 }
